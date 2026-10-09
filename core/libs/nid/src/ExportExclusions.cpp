@@ -98,7 +98,7 @@ std::unordered_set<std::string> ReadElfExports(const std::vector<std::uint8_t>& 
     }
     if (result.empty()) throw std::runtime_error("reference ELF has no exports");
     return result;
-}
+ }
 
 }
 
@@ -132,6 +132,6 @@ std::unordered_set<std::string> ReadExportExclusions(const std::string& path) {
         result.insert(std::move(normalized));
     }
     return result;
-}
+ }
 
 }
